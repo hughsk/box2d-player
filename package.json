@@ -1,0 +1,34 @@
+{
+  "name": "box2d-player",
+  "version": "0.0.0",
+  "description": "A small module that handles creating a player that can jump with Box2dweb",
+  "main": "index.js",
+  "dependencies": {
+    "box2d-events": "~0.0.0",
+    "inherits": "~2.0.0"
+  },
+  "devDependencies": {
+    "box2dweb-commonjs": "~2.1.0",
+    "raf": "~0.0.3",
+    "vkey": "~0.0.2",
+    "browserify": "~2.26.0",
+    "beefy": "~0.3.0"
+  },
+  "scripts": {
+    "start": "beefy demo.js:bundle.js --live",
+    "prepublish": "browserify demo.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/box2d-player.git"
+  },
+  "keywords": [
+    "platformer",
+    "physics",
+    "box2d",
+    "game"
+  ],
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com/)",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
