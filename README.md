@@ -37,7 +37,7 @@ following options:
 ### `player.jump()` ###
 
 Triggers a jump provided there's a physical body below the player and it's not
-moving upwards.
+moving upwards. Returns `true` if successful.
 
 Right now you'll still need to control horizontal motion manually - you can do
 this by changing the value of the `player.body.m_linearVelocity.x` property.

@@ -62,11 +62,13 @@ function wrapper(Box2D) {
 
   var tempvec = new b2Vec2
   b2Player.prototype.jump = function() {
-    if (this.canjump && this.body.m_linearVelocity.y >= 0) {
+    var jumping = this.canjump && this.body.m_linearVelocity.y >= 0
+    if (jumping) {
       tempvec.x = 0
       tempvec.y = -this.jumpHeight
       this.body.ApplyImpulse(tempvec, this.body.GetWorldCenter())
     }
+    return jumping
   }
 
   b2Player.prototype.createSensor = function(verts) {
