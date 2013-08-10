@@ -1,6 +1,6 @@
 {
   "name": "box2d-player",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A small module that handles creating a player that can jump with Box2dweb",
   "main": "index.js",
   "dependencies": {
